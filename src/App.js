@@ -7,7 +7,8 @@ const App = () => {
   return (
     <>
       <Header></Header>
-         <Routing></Routing>  
+      <Routing></Routing>   
+        
       
     </>
   );
