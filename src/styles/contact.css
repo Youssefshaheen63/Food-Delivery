@@ -70,12 +70,13 @@
 }
 .newsletter span {
   /*background: #df2020;*/
-  padding: 5px 10px;
+  padding: 5px 7px;
   border-radius: 5px;
 }
 
 .newsletter span i {
   color: #373232;
+  padding-right: 2px;
   /*background-color: #df2020;*/
 }
 
@@ -114,8 +115,7 @@
   
   .contact__logo h2 {
     font-weight: bolder;
-    text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 15px;
     color: #e01a1a;
   }
@@ -127,8 +127,8 @@
     padding: 4px 20px;
     font-size: 0.7rem;
   }
-  .newsletter span {
-    padding: 5px 8px;
+  .newsletter span i {
+    padding: 2px ;
     border-radius: 5px;
   }
 }
@@ -153,8 +153,8 @@
     padding: 4px 20px;
     font-size: 0.7rem;
   }
-  .newsletter span {
-    padding: 5px 5px;
+  .newsletter span i {
+    padding: 2px;
     border-radius: 5px;
   }
 }
