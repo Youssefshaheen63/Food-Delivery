@@ -46,11 +46,13 @@ const Contact = () => {
                 <p>Location: Helipolis, Cairo , Egypt.</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01140096695</span>
+                <span>Phone: </span>
+                <p>01140096695</p>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Email: Tasty-Treat@gmail.com</span>
+                <span>Email: </span>
+                <p>Tasty-Treat@gmail.com</p>
               </ListGroupItem>
             </ListGroup>
           </Col>
