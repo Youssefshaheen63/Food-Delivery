@@ -7,8 +7,8 @@ const App = () => {
   return (
     <>
       <Header></Header>
-       {/* <Routing></Routing>  */}
-      <Contact></Contact>
+         <Routing></Routing>  
+      
     </>
   );
 };

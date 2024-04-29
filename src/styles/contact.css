@@ -187,7 +187,55 @@
 
 @media only screen and (max-width: 576px) {
   .contact{
-    height: fit-content;
+    height: 60hv;@media only screen and (max-width: 992px) {
+      .contact{
+        height: fit-content;
+      }
+      .contact__logo h2 {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #e01a1a;
+      }
+      .newsletter input {
+        padding: 7px;
+        font-size: 0.7rem;
+      }
+      .newsletter span {
+        padding: 4px 20px;
+        font-size: 0.7rem;
+      }
+      .newsletter span {
+        padding: 5px 5px;
+        border-radius: 5px;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .contact{
+        height: fit-content;
+      }
+      .contact__logo h2 {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #e01a1a;
+      }
+      .newsletter input {
+        padding: 7px;
+        font-size: 0.7rem;
+      }
+      .newsletter span {
+        padding: 4px 20px;
+        font-size: 0.7rem;
+      }
+      .newsletter span {
+        padding: 5px 5px;
+        border-radius: 5px;
+      }
+    }
+        
   }
   .contact__logo h2 {
     font-weight: bolder;
@@ -212,7 +260,7 @@
   }
 }@media only screen and (max-width: 575px) {
   .contact{
-    height:90vh;
+    height:94vh;
   }
   .contact__logo h2 {
     font-weight: bolder;
