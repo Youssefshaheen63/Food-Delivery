@@ -37,7 +37,7 @@ const Header = () => {
             <h5>Tasty Treat</h5>
           </div>
 
-          <div className={`navigation ${isMenuOpen ? 'show_menu' : ''}`}>
+          <div className={`navigation ${isMenuOpen ? "show_menu" : ""}`}>
             <div className="menu d-flex align-items-center gap-4">
               {nav_items.map((item, index) => (
                 <NavLink to={item.path} key={index} onClick={toggleMenu}>
