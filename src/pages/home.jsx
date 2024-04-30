@@ -5,7 +5,6 @@ import Category from "../components/UI/category/Category";
 const Home = () => {
 	return (
 		<>
-			<div>Home</div>
 			<section>
 				<Category />
 			</section>
