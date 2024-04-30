@@ -1,8 +1,8 @@
-import React , {useRef} from "react"; //enable the use of JSX syntax and React hooks
-import Helmet from "../components/Helmet/Helmet"
-import CommonSection from './../components/UI/common-section/CommonSection';
-import { Container, Row, Col } from "reactstrap";//library for Bootstrap components implemented as React components
-import { Link } from "react-router-dom";//enable navigation to other routes
+import React, { useRef } from "react"; //enable the use of JSX syntax and React hooks
+import Helmet from "../components/Helmet/Helmet";
+import CommonSection from "./../components/UI/common-section/CommonSection";
+import { Container, Row, Col } from "reactstrap"; //library for Bootstrap components implemented as React components
+import { Link } from "react-router-dom"; //enable navigation to other routes
 
 const Login = () => {
   //hook used to reference the input elements for email and password
@@ -15,9 +15,8 @@ const Login = () => {
     e.preventDefault();
   };
 
-
   return (
-    <Helmet title="Login"> 
+    <Helmet title="Login">
       <CommonSection title="Login" />
       <section>
         <Container>
@@ -25,7 +24,7 @@ const Login = () => {
             <Col lg="6" md="6" sm="12" className="m-auto text-center">
               <form className="form mb-5" onSubmit={submitHandler}>
                 <div className="form__group">
-                  <input //first input
+                  <input 
                     type="email"
                     placeholder="Email"
                     required
@@ -33,18 +32,20 @@ const Login = () => {
                   />
                 </div>
                 <div className="form__group">
-                  <input //second input
+                  <input 
                     type="password"
                     placeholder="Password"
                     required
                     ref={loginPasswordRef}
                   />
                 </div>
-                <button type="submit" className="addTOCart__btn"> //button to sign in
+              {/*button to sign in */} 
+                <button type="submit" className="addTOCart__btn">
                   Login
                 </button>
               </form>
-              <Link to="/register"> //go to sign up page
+              {/*go to sign up page */}
+              <Link to="/register">
                 Don't have an account? Create an account
               </Link>
             </Col>
@@ -52,7 +53,6 @@ const Login = () => {
         </Container>
       </section>
     </Helmet>
-
   );
 };
 
