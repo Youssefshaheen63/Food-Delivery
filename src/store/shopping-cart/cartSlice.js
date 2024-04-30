@@ -1,15 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+//retrieves the contents of the "cartItems"
 const items =
   localStorage.getItem("cartItems") !== null
     ? JSON.parse(localStorage.getItem("cartItems"))
     : [];
 
+// retrieves the "totalAmount" value
 const totalAmount =
   localStorage.getItem("totalAmount") !== null
     ? JSON.parse(localStorage.getItem("totalAmount"))
     : 0;
 
+// retrieves the value associated with the key "totalQuantity"
 const totalQuantity =
   localStorage.getItem("totalQuantity") !== null
     ? JSON.parse(localStorage.getItem("totalQuantity"))
