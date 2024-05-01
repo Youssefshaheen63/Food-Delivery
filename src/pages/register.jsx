@@ -3,6 +3,7 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import "../styles/login.css";
 
 const Register = () => {
 	const signupNameRef = useRef();
@@ -23,7 +24,7 @@ const Register = () => {
 							<form className="form mb-5" onSubmit={submitHandler}>
 								<div className="form__group">
 									<input
-										type="text"
+										type="fullname"
 										placeholder="Full name"
 										required
 										ref={signupNameRef}
