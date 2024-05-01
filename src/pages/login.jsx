@@ -7,8 +7,8 @@ import { Link } from "react-router-dom"; //enable navigation to other routes
 const Login = () => {
   //hook used to reference the input elements for email and password
   //,this allows referencing the document object model directly
-  const loginNameRef = useRef();
-  const loginPasswordRef = useRef();
+  const loginNameRef = useRef(0);
+	const loginPasswordRef = useRef(0);
 
   // Function used to defined to handle form submission
   const submitHandler = (e) => {

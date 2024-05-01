@@ -7,7 +7,7 @@ import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 import Products from "../assets/Fakedata/products.js";
 import Testimonialslider from "../components/UI/slider/TestimonialSlider.jsx";
 import Helmet from "../components/Helmet/Helmet.js";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import heroImg from "../assets/images/hero.png";
 import featureImag01 from "../assets/images/service-01.png";
 import featureImag02 from "../assets/images/service-02.png";
@@ -15,6 +15,8 @@ import featureImag03 from "../assets/images/service-03.png";
 import foodCategoryImg01 from "../assets/images/hamburger.png";
 import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
+import whyImg from "../assets/images/location.png";
+import networkImg from "../assets/images/network.png";
 import "../styles/landing.css";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
@@ -173,7 +175,7 @@ const Home = () => {
 							<h2>Popular Foods</h2>
 						</Col>
 						<Col lg="12">
-							<div className="food__category d-flex align-items-center justify-content-center gap-4">
+							<div className="food__category d-flex align-items-center justify-content-center gap-3">
 								<button
 									className={`all__btn  ${
 										category === "ALL" ? "active__btn" : ""
@@ -222,9 +224,97 @@ const Home = () => {
 					</Row>
 				</Container>
 			</section>
-			{/* <section>
-				<Testimonialslider />
-			</section> */}
+
+			<section className="why__us mt-5">
+				<Container>
+					<Row>
+						<Col lg="6" md="6">
+							<img src={whyImg} alt="Why Us" className="w-100" />
+						</Col>
+
+						<Col lg="6" md="6">
+							<div className="why__us__content">
+								<h2 className="why__us__title mb-4">
+									Why <span>Teasty Treat?</span>
+								</h2>
+								<p className="why__us__desc">
+									Tasty Treat is a family-owned and operated restaurant that has
+									been in business since 2010.
+								</p>
+
+								<ListGroup className="mt-5">
+									<ListGroupItem className=" border-0 ps-0">
+										<p className="choose__us__title  d-flex align-items-center gap-2">
+											<i className="ri-checkbox-circle-line"></i>Fresh and tasty
+											foods
+										</p>
+										<p className="choose__us__desc">
+											We provide the best quality of food.
+										</p>
+									</ListGroupItem>
+
+									<ListGroupItem className="border-0 ps-0">
+										<p className="choose__us__title  d-flex align-items-center gap-2">
+											<i className="ri-checkbox-circle-line"></i>Quality support
+										</p>
+										<p className="choose__us__desc">
+											We always try to give our best.
+										</p>
+									</ListGroupItem>
+
+									<ListGroupItem className="border-0 ps-0">
+										<p className="choose__us__title  d-flex align-items-center gap-2">
+											<i className="ri-checkbox-circle-line"></i>Order from any
+											location
+										</p>
+										<p className="choose__us__desc">
+											You can order from anywhere.
+										</p>
+									</ListGroupItem>
+								</ListGroup>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</section>
+
+			<section className="pt-0 mb-5">
+				<Container>
+					<Row>
+						<Col lg="12" className="text-center mb-5 mt-5">
+							<h2>Hot Pizza</h2>
+						</Col>
+
+						{hotPizza.map((item) => (
+							<Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-5">
+								<ProductCard item={item} />
+							</Col>
+						))}
+					</Row>
+				</Container>
+			</section>
+			<section>
+				<Container>
+					<Row>
+						<Col lg="6" md="6">
+							<div className="testimonial ">
+								<h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+								<h2 className="testimonial__title">
+									What our <span>customers</span> says
+								</h2>
+								<p className="testimonial__desc">
+									Our customers are always very happy with their food. They
+									recommend us to their friends and family.
+								</p>
+								<Testimonialslider />
+							</div>
+						</Col>
+						<Col lg="6" md="6">
+							<img src={networkImg} alt="Network" className="w-100" />
+						</Col>
+					</Row>
+				</Container>
+			</section>
 			<Footer />
 		</Helmet>
 	);
