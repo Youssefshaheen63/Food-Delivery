@@ -25,14 +25,14 @@ const Contact = () => {
           <Row>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="contact__title">Delivery Time</h5>
-            <ListGroup className="deliver__time-list">
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
+            <h5 className="contact_title">Delivery Time</h5>
+            <ListGroup className="deliver__list">
+              <ListGroupItem className=" delivery__item border-0 ps-0">
                 <span>Sunday - Thursday</span>
                 <p>10:00am - 11:00pm</p>
               </ListGroupItem>
 
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
+              <ListGroupItem className=" delivery__item border-0 ps-0">
                 <span>Friday - Saturday</span>
                 <p>11:00am - 11:00pm</p>
               </ListGroupItem>
@@ -40,17 +40,17 @@ const Contact = () => {
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="contact__title">Contact</h5>
-            <ListGroup className="deliver__time-list">
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
+            <h5 className="contact_title">Contact</h5>
+            <ListGroup className="deliver__list">
+              <ListGroupItem className=" delivery__item border-0 ps-0">
                 <p>Location: Helipolis, Cairo , Egypt.</p>
               </ListGroupItem>
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
+              <ListGroupItem className=" delivery__item border-0 ps-0">
                 <span>Phone: </span>
                 <p>01140096695</p>
               </ListGroupItem>
 
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
+              <ListGroupItem className=" delivery__item border-0 ps-0">
                 <span>Email: </span>
                 <p>Tasty-Treat@gmail.com</p>
               </ListGroupItem>
@@ -59,9 +59,9 @@ const Contact = () => {
           </Row>
           <Row>
           <Col lg="3" md="4" sm="6">
-            <h5 className="email__title"> Newsletter</h5>
+            <h5 className="email_title"> Newsletter</h5>
             <p className=" ">Subscribe our newsletter</p>
-            <div className="newsletter">
+            <div className="news_letter">
               <input type="email" placeholder="Enter your email" />
               <span>
                 <i class="ri-send-plane-line"></i>
@@ -72,13 +72,13 @@ const Contact = () => {
 
         <Row className="mt-5">
           <Col lg="6" md="6">
-            <p className="copyright__text">
+            <p className="copyright_text">
               Copyright - 2024, website made by software team . All Rights
               Reserved.
             </p>
           </Col>
           <Col lg="6" md="6">
-            <div className="social__links d-flex align-items-center gap-4 justify-content-end">
+            <div className="social_links d-flex align-items-center gap-4 justify-content-end">
               <p className=" follow m-0">Follow: </p>
               <span>
                 {" "}
@@ -93,7 +93,7 @@ const Contact = () => {
               </span>
               <span>
                 {" "}
-                <Link to="https://twitter.com/" className="no-underline">
+                <Link to="https://twitter.com/" className="no-Underline">
                   <i class="ri-twitter-x-fill"></i>
                 </Link>{" "}
 
