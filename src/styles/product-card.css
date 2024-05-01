@@ -16,7 +16,8 @@
   
   .product__content h5 a {
     color: #212245;
-    font-size: 1rem;
+    font-size: 12px;
+    text-decoration: none;
   }
   
   .product__content h5 {
@@ -25,13 +26,13 @@
   
   .product__price {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: #df2020;
   }
   
   .addTOCart__btn {
     border: none;
-    padding: 7px 25px;
+    padding: 7px 15px;
     background: #df2020;
     color: #fff;
     border-radius: 5px;
@@ -40,7 +41,7 @@
   
   @media only screen and (max-width: 992px) {
     .product__content h5 a {
-      font-size: 0.8rem;
+        font-size: 8px;
     }
     .product__item {
       padding: 20px;

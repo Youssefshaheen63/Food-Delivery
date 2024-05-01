@@ -1,0 +1,137 @@
+.landing__content{
+  padding-top: 70px;
+}
+.landing__content p{
+  font-size:1rem ;
+  line-height: 30px;
+  color: #777;
+}
+.landing__title{
+  font-size: 2.5rem ;
+  line-height: 55px;
+}
+.landing__title span{
+  color: #df2020;
+}
+.landing__btns button{
+  border:none ;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.order__btn{
+  background-color: #df2020;
+  color: #fff;
+  transition: 0.4s;
+}
+.order__btn:hover{
+  background: #000;
+}
+
+.all__foods-btn{
+  background: transparent;
+  border: 1px solid #df2020 !important;
+}
+.all__foods-btn a{
+  text-decoration: none;
+  color: #df2020;
+}
+.all__foods-btn i{
+  color: #df2020;
+}
+
+.services p{
+  color: #212245 ;
+  font-weight: 600;
+  font-style: 0.9rem;
+}
+.services i{
+  padding: 5px;
+   background: #df2020;
+   border-radius: 50%;
+   color: #fff;
+   font-weight: 500 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing__content h5{
+    font-size: 1rem;
+  }
+    .landing__content p{
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+  .landing__title{
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+.landing__btns button{
+  padding: 5px 10px;
+  font-style: 0.7rem;
+}
+.services p{
+  font-size: 0.7rem !important;
+}
+
+.feature__item h5 {
+  font-size: 0.9rem;
+}
+.feature__item p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.feature__subtitle {
+  font-size: 1rem;
+}
+.feature__text{
+font-size: 0.8rem;
+margin-bottom: 0;
+}
+
+.food__category{
+  padding: 15px;
+}
+
+.food__category button{
+  padding: 5px 15px;
+  font-size: 0.6rem;
+}
+
+ .choose__us__title {
+    font-size: 0.8rem;
+  }
+
+  .choose__us__desc {
+    font-size: 0.7rem;
+  }
+
+  .testimonial__subtitle {
+    font-size: 1rem;
+  }
+  .testimonial__desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .landing__btns button{
+  padding: 5px 10px;
+  font-size: 0.7rem;
+}
+  .landing__content {
+    text-align: center;
+  }
+
+ .landing__btns {
+    justify-content: center;
+  }
+
+ .services {
+    justify-content: center;
+  }
+  .why__choose__us {
+    padding-top: 0 !important;
+  }
+}
