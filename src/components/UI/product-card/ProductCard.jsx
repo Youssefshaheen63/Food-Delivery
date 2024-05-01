@@ -23,7 +23,7 @@ const ProductCard = (props) => {
   };
 
   return (
-    // return item with image & content(card+price+button) 
+    // return item with image & content(price+button) 
     <div className="product__item">
       <div className="product__img">
         <img src={image} alt="product-img" className="w-50" />
