@@ -36,3 +36,37 @@
   border-radius: 5px  !important;
   color: #df2020 !important;
 }
+
+.why__us__title span{
+  color: #df2020;
+}
+.why__us__desc{
+   color: #777;
+   line-height: 28px;
+}
+
+.choose__us__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.choose__us__title i{
+  color: #df2020;
+  font-weight: 500 !important; 
+}
+
+.choose__us__desc{
+  color: #777;
+}
+
+.testimonial__subtitle{
+  color: #df2020;
+}
+.testimonial__title span{
+  color: #df2020;
+} 
+
+.testimonial__desc{
+  color: #777;
+  line-height: 30px;
+}
+

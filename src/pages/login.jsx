@@ -3,12 +3,13 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "./../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap"; //library for Bootstrap components implemented as React components
 import { Link } from "react-router-dom"; //enable navigation to other routes
+import "../styles/login.css";
 
 const Login = () => {
   //hook used to reference the input elements for email and password
   //,this allows referencing the document object model directly
-  const loginNameRef = useRef();
-  const loginPasswordRef = useRef();
+  const loginNameRef = useRef(0);
+	const loginPasswordRef = useRef(0);
 
   // Function used to defined to handle form submission
   const submitHandler = (e) => {
@@ -19,7 +20,7 @@ const Login = () => {
     <Helmet title="Login">
       <CommonSection title="Login" />
       <section>
-        <Container>
+        <Container className="all">
           <Row>
             <Col lg="6" md="6" sm="12" className="m-auto text-center">
               <form className="form mb-5" onSubmit={submitHandler}>
@@ -45,7 +46,7 @@ const Login = () => {
                 </button>
               </form>
               {/*go to sign up page */}
-              <Link to="/register">
+              <Link to="/register" className="register-link">
                 Don't have an account? Create an account
               </Link>
             </Col>
