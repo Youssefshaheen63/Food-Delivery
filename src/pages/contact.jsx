@@ -51,74 +51,6 @@ const Contact = () => {
 									<span>Phone: 01140096695</span>
 								</ListGroupItem>
 
-<<<<<<< HEAD
-          <Col lg="3" md="4" sm="6">
-            <h5 className="contact__title">Contact</h5>
-            <ListGroup className="deliver__time-list">
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <p>Location: Helipolis, Cairo , Egypt.</p>
-              </ListGroupItem>
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: </span>
-                <p>01140096695</p>
-              </ListGroupItem>
-
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Email: </span>
-                <p>Tasty-Treat@gmail.com</p>
-              </ListGroupItem>
-            </ListGroup>
-          </Col>
-          </Row>
-          <Row>
-          <Col lg="3" md="4" sm="6">
-            <h5 className="email__title"> Newsletter</h5>
-            <p className=" ">Subscribe our newsletter</p>
-            <div className="newsletter">
-              <input type="email" placeholder="Enter your email" />
-              <span>
-                <i class="ri-send-plane-line"></i>
-              </span>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="mt-5">
-          <Col lg="6" md="6">
-            <p className="copyright__text">
-              Copyright - 2024, website made by software team . All Rights
-              Reserved.
-            </p>
-          </Col>
-          <Col lg="6" md="6">
-            <div className="social__links d-flex align-items-center gap-4 justify-content-end">
-              <p className=" follow m-0">Follow: </p>
-              <span>
-                {" "}
-                <Link to="https://www.facebook.com/" className="no-underline">
-                  <i class="ri-facebook-fill"></i>
-                </Link>{" "}
-              </span>
-              <span>
-                <Link to="https://www.instagram.com/" className="no-underline">
-                  <i class="ri-instagram-line"></i>
-                </Link>
-              </span>
-              <span>
-                {" "}
-                <Link to="https://twitter.com/" className="no-underline">
-                  <i class="ri-twitter-x-fill"></i>
-                </Link>{" "}
-
-              </span>
-            </div>
-          </Col>
-        </Row>
-        </Container>
-    </div>
-    </body>
-  );
-=======
 								<ListGroupItem className=" delivery__time-item border-0 ps-0">
 									<span>Email: Tasty-Treat@gmail.com</span>
 								</ListGroupItem>
@@ -175,7 +107,6 @@ const Contact = () => {
 			</div>
 		</Helmet>
 	);
->>>>>>> origin/main
 };
 
 
