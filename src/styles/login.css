@@ -1,0 +1,61 @@
+.all {
+  position: absolute;
+  top: 380px; 
+  left: -5px; 
+  right: -5px; 
+  bottom: -5px; 
+}
+
+.form {
+  position: relative;
+}
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+/* Style for background rectangle */
+.form::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Adjust this value to control the position of the rectangle */
+  left: -5px; /* Adjust this value to control the position of the rectangle */
+  right: -5px; /* Adjust this value to control the position of the rectangle */
+  bottom: -5px; /* Adjust this value to control the position of the rectangle */
+  background-color: #fde4e4; /* Adjust the background color */
+  z-index: -1;
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* Style for inputs and button */
+.form input[type="fullname"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: calc(100% - 100px); /* Adjust the width of inputs */
+  height: 60px;
+  padding: 30px; /* Adjust padding */
+  outline: none;
+  background-color: transparent; /* Transparent background color for inputs */
+  border: none; /* Remove border */
+  border-bottom: 2px solid #ccc; /* Add bottom border */
+}
+
+.form button[type="submit"] {
+  width: calc(100% - 550px); /* Adjust the width of button */
+  padding: 10px; /* Adjust padding */
+  margin: 20px;
+  background: #e01a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Adjust border radius */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-link {
+    color: black;
+    text-decoration: none; /* Remove underline */
+  }
+  
+
+  
