@@ -10,7 +10,22 @@ const Contact = () => {
     <body >
     <div className="contact">
       <Container>
-        <Row>
+        
+      <Row>
+          <Col lg="12" md="4" sm="6">
+            <div className=" contact__logo text-start">
+             
+              <h2>Tasty Treat</h2>
+              <p>
+              Tasty Treat offers delicious food prepared with fresh ingredients by a skilled culinary team. 
+              Its lively yet upscale atmosphere makes it perfect for dining with friends, 
+              family, or colleagues, whether enjoying a full-course meal or grabbing drinks and pizza at the bar.
+              </p>
+            </div>
+          </Col>
+          </Row>
+          <Row>
+
           <Col lg="3" md="4" sm="6">
             <h5 className="contact_title">Delivery Time</h5>
             <ListGroup className="deliver__list">
