@@ -22,10 +22,10 @@ const CartItem = ({ item }) => {
         <div className="cart_product_info d-flex justify-content-between w-100 gap-4">
           <div>
             <h6 className="cart_product_title">{title}</h6>
-            <p className="cart_product_price d-flex justify-content-between align-items-center gap-5">
+            <p className="cart_product_price d-flex align-items-center gap-5">
               {quantity}x <span>${totalPrice}</span>
             </p>
-            <div className="increase_decrease_btn d-flex justify-content-between align-items-center gap-3">
+            <div className="increase_decrease_btn d-flex align-items-center gap-3">
               <span className="increase_btn" onClick={incrementItem}>
                 <i class="ri-add-line"></i>
               </span>
