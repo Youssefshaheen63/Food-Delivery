@@ -7,10 +7,7 @@
 .Container {
   width: 100px;
 }
-/* .contact__logo img {
-  width: calc(100% - 80%);
-  margin-bottom: 5px;
-} */
+
 .contact__logo h2 {
   font-weight: bolder;
   font-size: 50px;
@@ -69,7 +66,7 @@
   outline: none;
 }
 .news_letter span {
-  /*background: #df2020;*/
+ 
   padding: 5px 7px;
   border-radius: 5px;
 }
@@ -77,7 +74,7 @@
 .news_letter span i {
   color: #373232;
   padding-right: 2px;
-  /*background-color: #df2020;*/
+  
 }
 
 .news_letter input::placeholder {
@@ -90,11 +87,7 @@
 }
 
 .social_links span i {
-  /* padding: 7px;
-    background:#df2020;
-    color: #fff;
-    border-radius: 40%;
-   */
+ 
 
   padding: 7px;
   background: #e01a1a;
@@ -111,12 +104,7 @@
   color: #e01a1a;
 }
 @media only screen and (max-width: 1998px) {
-  /* .contact__logo h2 {
-    font-weight: bolder;
-    font-size: 50px;
-    margin-bottom: 15px;
-    color: #e01a1a;
-  } */
+  
   .news_letter input {
     padding: 7px;
     font-size: 0.7rem;

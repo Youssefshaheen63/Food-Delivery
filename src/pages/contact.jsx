@@ -13,7 +13,7 @@ const Contact = () => {
         <Row>
           <Col lg="12" md="4" sm="6">
             <div className=" contact__logo text-start">
-              {/* <img src={logo} alt="logo" /> */}
+             
               <h2>Tasty Treat</h2>
               <p>
               Tasty Treat offers delicious food prepared with fresh ingredients by a skilled culinary team. 
