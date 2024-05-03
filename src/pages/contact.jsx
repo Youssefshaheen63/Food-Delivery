@@ -10,7 +10,7 @@ const Contact = () => {
     <body >
     <div className="contact">
       <Container>
-        <Row>
+      <Row>
           <Col lg="12" md="4" sm="6">
             <div className=" contact__logo text-start">
              
