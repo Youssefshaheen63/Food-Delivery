@@ -1,15 +1,20 @@
 //import Footer from "./components/Footer";
+import Carts from "./components/UI/cart/Carts";
 import Header from "./components/header";
-import Contact from "./pages/contact";
 import Routing from "./routing/routing";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  const showCart = useSelector((state) => state.cartUi.cartIsVisible);
+
   return (
-    <>
+    <div>
       <Header></Header>
-       {/* <Routing></Routing>  */}
-      <Contact></Contact>
-    </>
+      {showCart && <Carts />}
+      <div>
+        <Routing />
+      </div>
+    </div>
   );
 };
 
