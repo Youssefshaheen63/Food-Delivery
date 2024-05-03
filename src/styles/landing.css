@@ -54,3 +54,84 @@
    color: #fff;
    font-weight: 500 !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .landing__content h5{
+    font-size: 1rem;
+  }
+    .landing__content p{
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+  .landing__title{
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+.landing__btns button{
+  padding: 5px 10px;
+  font-style: 0.7rem;
+}
+.services p{
+  font-size: 0.7rem !important;
+}
+
+.feature__item h5 {
+  font-size: 0.9rem;
+}
+.feature__item p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.feature__subtitle {
+  font-size: 1rem;
+}
+.feature__text{
+font-size: 0.8rem;
+margin-bottom: 0;
+}
+
+.food__category{
+  padding: 15px;
+}
+
+.food__category button{
+  padding: 5px 15px;
+  font-size: 0.6rem;
+}
+
+ .choose__us__title {
+    font-size: 0.8rem;
+  }
+
+  .choose__us__desc {
+    font-size: 0.7rem;
+  }
+
+  .testimonial__subtitle {
+    font-size: 1rem;
+  }
+  .testimonial__desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .landing__btns button{
+  padding: 5px 10px;
+  font-size: 0.7rem;
+}
+  .landing__content {
+    text-align: center;
+  }
+
+ .landing__btns {
+    justify-content: center;
+  }
+
+ .services {
+    justify-content: center;
+  }
+  .why__choose__us {
+    padding-top: 0 !important;
+  }
+}

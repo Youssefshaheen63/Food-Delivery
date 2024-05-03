@@ -41,7 +41,7 @@
   
   @media only screen and (max-width: 992px) {
     .product__content h5 a {
-      font-size: 0.8rem;
+        font-size: 8px;
     }
     .product__item {
       padding: 20px;

@@ -3,6 +3,7 @@ import { Col, Container, ListGroup, ListGroupItem, Row } from "reactstrap";
 import logo from "../assets/images/res-logo.png";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
+import Helmet from "../components/Helmet/Helmet";
 
 const Contact = () => {
   return (
