@@ -80,7 +80,7 @@ const Checkout = () => {
             <h6 className="d-flex align-items-center justify-content-between mb-3">
               Shipping: <span>${shippingCost}</span>
             </h6>
-            <div className="checkout-total"> 
+            <div className="checkout_total"> 
             <h5 className="d-flex align-items-center justify-content-between mb-3">
               Total: <span>${totalAmount}</span>
             </h5> 

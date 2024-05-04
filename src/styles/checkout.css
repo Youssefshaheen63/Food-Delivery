@@ -7,7 +7,7 @@
     border-radius: 5px;
   }
   
-  .form__group {
+  .form_group {
     margin-bottom: 50px;
   }
   .form_group input {
@@ -44,7 +44,7 @@
   }
   @media only screen and (max-width: 992px) {
    
-    .addTOCart__btn {
+    .addTOCart_btn {
       padding: 5px 15px;
       font-size: 0.7rem;
       
