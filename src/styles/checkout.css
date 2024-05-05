@@ -22,7 +22,7 @@
   .form_group input:focus{
     outline: none;
   }
-.AddToCart_btn {
+.payment_btn {
     border: none;
     padding: 7px 25px;
     background: #df2020;
@@ -44,7 +44,7 @@
   }
   @media only screen and (max-width: 992px) {
    
-    .AddToCart_btn {
+    .payment_btn {
       padding: 5px 15px;
       font-size: 0.7rem;
       
