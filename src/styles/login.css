@@ -1,13 +1,9 @@
-.all {
-  position: absolute;
-  top: 380px; 
-  left: -5px; 
-  right: -5px; 
-  bottom: -5px; 
-}
-
 .form {
   position: relative;
+  top: 55%;
+  left: 5px;
+  right: 5px;
+  bottom: 5%;
 }
 
 .form__group {
@@ -18,44 +14,54 @@
 .form::before {
   content: "";
   position: absolute;
-  top: -5px; /* Adjust this value to control the position of the rectangle */
-  left: -5px; /* Adjust this value to control the position of the rectangle */
-  right: -5px; /* Adjust this value to control the position of the rectangle */
-  bottom: -5px; /* Adjust this value to control the position of the rectangle */
-  background-color: #fde4e4; /* Adjust the background color */
+  top: 0; 
+  left: 0;
+  right: -5px;
+  bottom: -5%; 
+  background-color: #fde4e4;
   z-index: -1;
-  border-radius: 5px; /* Adjust the border radius as needed */
+  border-radius: 5px;
 }
 
 /* Style for inputs and button */
 .form input[type="fullname"],
 .form input[type="email"],
 .form input[type="password"] {
-  width: calc(100% - 100px); /* Adjust the width of inputs */
-  height: 60px;
-  padding: 30px; /* Adjust padding */
+  width: 100%;
+  height: 40px;
+  padding: 15px;
   outline: none;
-  background-color: transparent; /* Transparent background color for inputs */
-  border: none; /* Remove border */
-  border-bottom: 2px solid #ccc; /* Add bottom border */
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
 }
 
 .form button[type="submit"] {
-  width: calc(100% - 550px); /* Adjust the width of button */
-  padding: 10px; /* Adjust padding */
-  margin: 20px;
+  width: 40%;
+  padding: 10px;
+  margin: 20px 0;
   background: #e01a1a;
   color: #fff;
   border: none;
-  border-radius: 5px; /* Adjust border radius */
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 }
 
 .register-link {
-    color: black;
-    text-decoration: none; /* Remove underline */
-  }
-  
+  color: black;
+  text-decoration: none;
+}
 
-  
+
+@media screen and (max-width: 768px) {
+  .all {
+    top: 20%;
+    bottom: 20%;
+  }
+
+  .form::before {
+    top: -10%; 
+    bottom: -10%; 
+  }
+}
