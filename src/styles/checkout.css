@@ -1,0 +1,74 @@
+
+.form {
+    width: 60%;
+    margin: auto;
+    background: #fde4e4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form_group {
+    margin-bottom: 50px;
+  }
+  .form_group input {
+    width: 100%;
+    background: transparent;
+    padding: 7px 20px;
+    border: none;
+    border-bottom: 1px solid #2122454c;
+    height: 55px;
+  }
+  
+  .form_group input:focus{
+    outline: none;
+  }
+.payment_btn {
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.checkout_bill {
+    background: #fde4e4;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .checkout_total {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+  }
+  @media only screen and (max-width: 992px) {
+   
+    .payment_btn {
+      padding: 5px 15px;
+      font-size: 0.7rem;
+      
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .checkout_bill h6 {
+      font-size: 0.9rem;
+    }
+    .checkout_bill {
+      margin-top: 40px;
+    }
+    .checkout_total 
+    .form {
+        width: 100% !important;
+        margin-top: 50px;
+      }
+    
+      .form_group input::placeholder {
+        font-size: 0.8rem;
+      }
+     
+  }
+  
+  
+  
+  

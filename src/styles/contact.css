@@ -1,15 +1,13 @@
 .contact {
   background: #fde4e4;
   margin-top: 30px;
-  height: 84vh;
+  height: 85.5vh;
+ padding-top: 30px;
 }
 .Container {
   width: 100px;
 }
-.contact__logo img {
-  width: calc(100% - 80%);
-  margin-bottom: 5px;
-}
+
 .contact__logo h2 {
   font-weight: bolder;
   font-size: 50px;
@@ -25,32 +23,32 @@
   line-height: 28px;
   width: fit-content;
 }
-.delivery__time-item {
+.delivery__item {
   background: transparent !important;
 }
-.delivery__time-item span {
+.delivery__item span {
   font-weight: bold;
   padding-left: 50px;
   font-size: 1rem;
   color: #373232;
 }
-.delivery__time-item p {
+.delivery__item p {
   padding-left: 50px;
   color: #373232;
 }
-.contact__title {
+.contact_title {
   font-size: 1.1rem;
   color: #373232;
   font-weight: bold;
   padding-left: 50px;
 }
-.email__title {
+.email_title {
   font-size: 1.1rem;
   color: #373232;
   font-weight: bold;
 }
 
-.newsletter {
+.news_letter {
   padding: 5px;
   border: 1px solid #373232;
   border-radius: 5px;
@@ -59,26 +57,27 @@
   align-items: center;
   cursor: pointer;
 }
-.newsletter input {
+.news_letter input {
   background: transparent;
   border: none;
   outline: none;
 }
-.newsletter input:focus {
+.news_letter input:focus {
   outline: none;
 }
-.newsletter span {
-  /*background: #df2020;*/
-  padding: 5px 10px;
+.news_letter span {
+ 
+  padding: 5px 7px;
   border-radius: 5px;
 }
 
-.newsletter span i {
+.news_letter span i {
   color: #373232;
-  /*background-color: #df2020;*/
+  padding-right: 2px;
+  
 }
 
-.newsletter input::placeholder {
+.news_letter input::placeholder {
   color: #373232;
 }
 .follow {
@@ -87,12 +86,8 @@
   font-weight: bold;
 }
 
-.social__links span i {
-  /* padding: 7px;
-    background:#df2020;
-    color: #fff;
-    border-radius: 40%;
-   */
+.social_links span i {
+ 
 
   padding: 7px;
   background: #e01a1a;
@@ -100,59 +95,138 @@
   border-radius: 50%;
 }
 
-.no-underline {
+.no-Underline {
   text-decoration: none;
 }
 
-.copyright__text {
+.copyright_text {
   font-size: 1.1rem;
   color: #e01a1a;
 }
-
-@media only screen and (max-width: 992px) {
-  .newsletter input {
+@media only screen and (max-width: 1998px) {
+  
+  .news_letter input {
     padding: 7px;
     font-size: 0.7rem;
   }
-  .newsletter span {
+  .news_letter span {
     padding: 4px 20px;
     font-size: 0.7rem;
   }
-  .newsletter span {
-    background: #e01a1a;
-    padding: 5px 5px;
+  .news_letter span i {
+    padding: 2px ;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contact{
+    height: fit-content;
+  }
+  .contact__logo h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #e01a1a;
+  }
+  .news_letter input {
+    padding: 7px;
+    font-size: 0.7rem;
+  }
+  .news_letter span {
+    padding: 4px 20px;
+    font-size: 0.7rem;
+  }
+  .news_letter span i {
+    padding: 2px;
     border-radius: 5px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .contant__title {
+  .contact{
+    height: fit-content;
+  }
+  .contact__logo h2 {
+    font-weight: bolder;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #e01a1a;
+  }
+  .contact__logo p {
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #373232;
+    line-height: 28px;
+    width:fit-content;
+  }
+  .contant_title {
     font-size: 0.8rem;
   }
 
-  .delivery__time-item span {
+  .delivery__item span {
     font-size: 0.8rem;
   }
 
-  .delivery__time-item p {
+  .delivery__item p {
     font-size: 0.7rem;
     margin-bottom: 0;
   }
 }
 
+
 @media only screen and (max-width: 576px) {
-  .copyright__text {
+      .contact{
+        height: fit-content;
+      }
+      .contact__logo h2 {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #e01a1a;
+      }
+      .news_letter input {
+        padding: 7px;
+        font-size: 0.7rem;
+      }
+      .news_letter span {
+        padding: 4px 20px;
+        font-size: 0.7rem;
+      }
+      .news_letter span {
+        padding: 5px 5px;
+        border-radius: 5px;
+      }
+    }
+@media only screen and (max-width: 575px) {
+  .contact{
+    height:fit-content;
+  }
+  .contact__logo h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #e01a1a;
+  }
+  .copyright_text {
     text-align: center;
   }
 
-  .social__links p {
+  .social_links p {
     font-size: 0.8rem;
   }
 
-  .social__links span {
+  .social_links span {
     padding: 4px;
   }
-  .social__links span a {
+  .social_links span a {
     font-size: 0.7rem;
   }
+  
 }
+

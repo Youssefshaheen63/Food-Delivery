@@ -1,14 +1,103 @@
-import React from "react";
+import React ,{useState} from "react";
 import Footer from "../components/Footer";
+import { useSelector } from "react-redux";
+import { Container ,Row, Col} from "reactstrap";
+import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
-
+import "../styles/checkout.css"
 const Checkout = () => {
-	return (
-		<Helmet title="Checkout">
-			<div>Checkout</div>
-			<Footer />
-		</Helmet>
-	);
+
+  const[enterName,setEnterName]=useState('')
+  const[enterEmail,setEnterEmail]=useState('')
+  const[enterNumber,setEnterNumber]=useState('')
+  const[enterCity,setEnterCity]=useState('')
+  const[enterCountry,setEnterCountry]=useState('')
+  const[postalCode,setPostalCode]=useState('')
+  const shippingInfo = [];
+  const cartTotalAmount = useSelector(state=> state.cart.totalAmount)
+  const shippingCost = 30
+
+  const totalAmount= cartTotalAmount+Number(shippingCost)
+ 
+  const submitHandler=e=>{
+    e.preventDefault()
+    const userShippingAddress={
+      name:enterName,
+      email: enterEmail,
+      phone:enterNumber,
+      city:enterCity,
+      country:enterCountry,
+      postalCode:postalCode,
+      
+    };
+    shippingInfo.push(userShippingAddress)
+    console.log(shippingInfo)
+  };
+
+
+
+  return <Helmet title='Checkout'>
+    <CommonSection title='Checkout'/>
+    <section>
+      <Container>
+        <Row>
+          <Col lg='8' md='6'>
+            <h4 className="mb-4 mt-5 ">Shipping Address</h4>
+            <form  className="checkout_form" onSubmit={submitHandler}>
+              <div className="form_group">
+                <input type="text" placeholder="Enter Your Name"
+                required onChange={e=>setEnterName(e.target.value)} />
+              </div>
+              <div className="form_group">
+                <input type="email" placeholder="Enter Your Email"
+                required onChange={e=>setEnterEmail(e.target.value)}/>
+              </div>
+              <div className="form_group">
+                <input type="number" placeholder="Phone Number"
+                required onChange={e=>setEnterNumber(e.target.value)}/>
+              </div>
+              <div className="form_group">
+                <input type="text" placeholder="Country"
+                required onChange={e=>setEnterCountry(e.target.value)}/>
+              </div>
+              <div className="form_group">
+                <input type="text" placeholder="City"
+                required onChange={e=>setEnterCity(e.target.value)}/>
+              </div>
+              <div className="form_group">
+                <input type="number" placeholder="Postal code"
+                required onChange={e=>setPostalCode(e.target.value)}/>
+              </div>
+              <button type="submit" className="payment_btn mt-3">Payment</button>
+            </form>
+          </Col>
+
+          <Col lg='4' md='6'>
+          <div className="checkout_bill mt-5">
+            <h6 className="d-flex align-items-center justify-content-between mb-3">
+              Subtotal: <span>${cartTotalAmount}</span>
+            </h6>
+            <h6 className="d-flex align-items-center justify-content-between mb-3">
+              Shipping: <span>${shippingCost}</span>
+            </h6>
+            <div className="checkout_total"> 
+            <h5 className="d-flex align-items-center justify-content-between mb-3">
+              Total: <span>${totalAmount}</span>
+            </h5> 
+            </div>
+
+          </div>
+          </Col>
+        </Row>
+
+      </Container>
+    </section>
+
+
+   
+  </Helmet>
+   
+ 
 };
 
 export default Checkout;
