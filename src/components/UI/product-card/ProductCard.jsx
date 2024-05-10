@@ -5,9 +5,8 @@ import { cartActions } from "./../../../store/shopping-cart/cartSlice";
 import "../../../styles/product-card.css";
 
 const ProductCard = (props) => {
-  const { id, title, image01, price } = props.item;
+  const { id, title, img, price } = props.item;
   const dispatch = useDispatch();
-
   const addToCart = () => {
     // When dispatch an action,
     //Redux will handle it and update the state of your application accordingly
@@ -16,7 +15,7 @@ const ProductCard = (props) => {
       cartActions.addItem({
         id,
         title,
-        image01,
+        img,
         price,
       })
     );
@@ -26,7 +25,7 @@ const ProductCard = (props) => {
     // return item with image & content(price+button)
     <div className="product__item">
       <div className="product__img">
-        <img src={image01} alt="product-img" className="w-50" />
+        <img src={img} alt="product-img" className="w-50" />
       </div>
 
       <div className="product__content">
