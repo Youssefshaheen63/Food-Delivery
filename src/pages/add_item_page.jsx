@@ -77,7 +77,7 @@ const AddItem = () => {
 		});
 	};
 	return (
-		<form onSubmit={handleAdd}>
+		<form onSubmit={handleAdd} className="AddItem-form">
 			<div className="left">
 				<img
 					src={
