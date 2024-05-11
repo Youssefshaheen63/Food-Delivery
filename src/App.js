@@ -11,8 +11,9 @@ const App = () => {
 
 	return (
 		<div>
+     
 			<Header></Header>
-
+      <ToastContainer/>
 			{showCart && <Carts />}
 			<div>
 				<Routing />

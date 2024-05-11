@@ -25,7 +25,7 @@ const Login = () => {
         (userCredential) => {
           const user = userCredential.user;
           toast.success("User logged Successfully", {
-            position: "top-right",
+            position: "top-center",
           });
 
           dispatch({ type: "LOGIN", payload: user });
@@ -37,8 +37,8 @@ const Login = () => {
         }
       );
     } catch (error) {
-      toast.success(error.message, {
-        position: "top-rignt",
+      toast.error("Invalid email or password", {
+        position: "top-center",
       });
     }
   };
