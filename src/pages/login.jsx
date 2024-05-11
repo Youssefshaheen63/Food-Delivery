@@ -37,7 +37,7 @@ const Login = () => {
         }
       );
     } catch (error) {
-      toast.error("Invalid email or password", {
+      toast.success("Invalid email and password", {
         position: "top-center",
       });
     }

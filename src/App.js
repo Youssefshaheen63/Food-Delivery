@@ -7,19 +7,18 @@ import Routing from "./routing/routing";
 import { useSelector } from "react-redux";
 
 const App = () => {
-	const showCart = useSelector((state) => state.cartUi.cartIsVisible);
+  const showCart = useSelector((state) => state.cartUi.cartIsVisible);
 
-	return (
-		<div>
-     
-			<Header></Header>
-      <ToastContainer/>
-			{showCart && <Carts />}
-			<div>
-				<Routing />
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <Header></Header>
+      <ToastContainer />
+      {showCart && <Carts />}
+      <div>
+        <Routing />
+      </div>
+    </div>
+  );
 };
 
 export default App;

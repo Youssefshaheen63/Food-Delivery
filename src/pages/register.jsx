@@ -26,8 +26,9 @@ const Register = () => {
       });
       navitage("/login");
     } catch (error) {
+      console.log(error.message);
       toast.error(error.message, {
-        position:"top-center",
+        position: "top-center",
       });
     }
   };

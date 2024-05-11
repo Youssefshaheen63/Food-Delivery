@@ -2,13 +2,10 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
-
 import { Col, Container, Row } from "reactstrap";
-
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
 import fetchProductsFromFirestore from "../assets/Fakedata/products.js";
-
 import "../styles/food.css";
 
 const Food = () => {
