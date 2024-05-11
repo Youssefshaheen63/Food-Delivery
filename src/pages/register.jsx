@@ -22,13 +22,13 @@ const Register = () => {
       console.log("user Registered Successfully");
 
       toast.success("User Registered Successfully", {
-        position: "center",
+        position: "top-center",
       });
       navitage("/login");
     } catch (error) {
       console.log(error.message);
-      toast.success(error.message, {
-        position: "center",
+      toast.error(error.message, {
+        position: "top-center",
       });
     }
   };
