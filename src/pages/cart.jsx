@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const Tr = (props) => {
-    const { id, title, price, image01, quantity } = props.item;
+    const { id, title, price, img, quantity } = props.item;
     const dispatch = useDispatch();
     const deleteItem = () => {
       dispatch(cartActions.deleteItem(id));
@@ -18,7 +18,7 @@ const Cart = () => {
     return (
       <tr className="text-center">
         <td className="cart-img-container">
-          <img src={image01} alt="product-img" />
+          <img src={img} alt="product-img" />
         </td>
         <td>{title}</td>
         <td>${price}</td>
@@ -64,17 +64,15 @@ const Cart = () => {
                 <h6>
                   Subtotal: <span>${totalAmount}</span>
                 </h6>
-                <p className="shipping-description">Shipping will be calculated at Checkout</p>
+                <p className="shipping-description">
+                  Shipping will be calculated at Checkout
+                </p>
                 <div className="d-flex gap-3">
                   <button>
-                    <Link to="/food">
-                      Continue Shopping
-                    </Link>
+                    <Link to="/food">Continue Shopping</Link>
                   </button>
                   <button>
-                    <Link to="/checkout">
-                      Proceed to Checkout
-                    </Link>
+                    <Link to="/checkout">Proceed to Checkout</Link>
                   </button>
                 </div>
               </div>
