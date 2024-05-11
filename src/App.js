@@ -10,15 +10,14 @@ const App = () => {
   const showCart = useSelector((state) => state.cartUi.cartIsVisible);
 
   return (
-    <div>
-      <Header></Header>
-      <ToastContainer />
-      {showCart && <Carts />}
-      <div>
-        <Routing />
-      </div>
-    </div>
-  );
+		<div>
+			<Header></Header>
+			{showCart && <Carts />}
+			<div>
+				<Routing />
+			</div>
+		</div>
+	);
 };
 
 export default App;
