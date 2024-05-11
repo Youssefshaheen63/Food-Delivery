@@ -4,10 +4,10 @@ import "../../../styles/cart-item.css";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/shopping-cart/cartSlice";
 const CartItem = ({ item }) => {
-  const { id, title, price, image01, quantity, totalPrice } = item;
+  const { id, title, price, img, quantity, totalPrice } = item;
   const dispatch = useDispatch();
   const incrementItem = () => {
-    dispatch(cartActions.addItem({ id, title, price, image01 }));
+    dispatch(cartActions.addItem({ id, title, price, img }));
   };
   const decrementItem = () => {
     dispatch(cartActions.removeItem(id));
@@ -18,7 +18,7 @@ const CartItem = ({ item }) => {
   return (
     <ListGroupItem className="border-0">
       <div className="cart_item_info d-flex gap-3 mb-2">
-        <img src={image01} alt="product-img" />
+        <img src={img} alt="product-img" />
         <div className="cart_product_info d-flex justify-content-between w-100 gap-4">
           <div>
             <h6 className="cart_product_title">{title}</h6>
