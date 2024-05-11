@@ -8,6 +8,7 @@ import FoodDetails from "../pages/food_details";
 import Cart from "../pages/cart";
 import Checkout from "../pages/checkout";
 import Contact from "../pages/contact";
+import AddItem from "../pages/add_item_page";
 
 const Routing = () => {
   return (
@@ -21,6 +22,7 @@ const Routing = () => {
       <Route path="/cart" element={<Cart />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
+      <Route path="/admin" element={<AddItem />}></Route>
     </Routes>
   );
 };
